@@ -1,0 +1,520 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore the fashion gallery of Oga Cisco Tailoring & Fashion, featuring traditional African wear, formal outfits, and contemporary styles."
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Fashion Gallery | Oga Cisco Tailoring &amp; Fashion</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Website Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <span>Premium tailoring. Made with precision.</span>
+            <span>Luxury | Style | Confidence</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand brand" href="index.html">
+                <span class="brand-symbol" aria-hidden="true">✂</span>
+
+                <span class="brand-text">
+                    OGA CISCO
+                    <small>TAILORING &amp; FASHION</small>
+                </span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="gallery.html"
+                        >
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ready-made.html">Ready-Made</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="contact.html#booking" class="btn btn-gold nav-booking">
+                    Book a Fitting
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Page Hero -->
+        <header class="page-hero">
+            <div class="container">
+
+                <p class="eyebrow">OUR CREATIVE COLLECTION</p>
+
+                <h1>Fashion Gallery</h1>
+
+                <p>
+                    Discover inspiration for your next outfit, from
+                    classic traditional designs to modern everyday style.
+                </p>
+
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li
+                            class="breadcrumb-item active"
+                            aria-current="page"
+                        >
+                            Gallery
+                        </li>
+                    </ol>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Gallery -->
+        <section class="section section-light">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">STYLE IN EVERY DETAIL</p>
+
+                    <h2>Explore Our Designs</h2>
+
+                    <p>
+                        Browse these fashion inspirations and find a look
+                        to discuss with our tailoring team.
+                    </p>
+                </div>
+
+                <!-- Gallery Filters -->
+                <div
+                    class="gallery-filters"
+                    role="group"
+                    aria-label="Filter gallery by fashion category"
+                >
+                    <button
+                        type="button"
+                        class="gallery-filter active"
+                        data-gallery-filter="all"
+                        aria-pressed="true"
+                    >
+                        All Designs
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-gallery-filter="traditional"
+                        aria-pressed="false"
+                    >
+                        Traditional Wear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-gallery-filter="formal"
+                        aria-pressed="false"
+                    >
+                        Formal Wear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-gallery-filter="casual"
+                        aria-pressed="false"
+                    >
+                        Casual Wear
+                    </button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="row g-4 gallery-grid" id="galleryGrid">
+
+                    <!-- Image 1 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="traditional"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1614251055880-ee96e4803393?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Traditional-inspired fashion"
+                            aria-label="View traditional-inspired fashion image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1614251055880-ee96e4803393?auto=format&fit=crop&w=800&q=85"
+                                alt="Traditional-inspired fashion style"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Traditional Wear</strong>
+                                    <small>Culture meets style</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Image 2 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="formal"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Contemporary formal menswear"
+                            aria-label="View formal menswear image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85"
+                                alt="Contemporary formal menswear"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Formal Wear</strong>
+                                    <small>Sharp and sophisticated</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Image 3 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="casual"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Smart casual fashion"
+                            aria-label="View smart casual fashion image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=85"
+                                alt="Smart casual shirt and outfit"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Casual Wear</strong>
+                                    <small>Comfortable everyday style</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Image 4 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="formal"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Classic tailored style"
+                            aria-label="View classic tailored style image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=800&q=85"
+                                alt="Classic tailored outfit"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Classic Style</strong>
+                                    <small>Timeless elegance</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Image 5 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="casual"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Modern fashion inspiration"
+                            aria-label="View modern fashion image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85"
+                                alt="Modern fashion outfit inspiration"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Modern Fashion</strong>
+                                    <small>Fresh contemporary looks</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Image 6 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4 gallery-item"
+                        data-category="traditional"
+                    >
+                        <button
+                            type="button"
+                            class="gallery-card"
+                            data-lightbox
+                            data-image="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1400&q=90"
+                            data-caption="Elegant fashion collection"
+                            aria-label="View elegant fashion collection image"
+                        >
+                            <img
+                                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85"
+                                alt="Elegant clothing collection"
+                                loading="lazy"
+                            >
+
+                            <span class="gallery-overlay">
+                                <span class="gallery-caption">
+                                    <strong>Elegant Designs</strong>
+                                    <small>Style for special occasions</small>
+                                </span>
+
+                                <span class="gallery-zoom" aria-hidden="true">
+                                    +
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <p class="gallery-note">
+                    These images are fashion inspiration. Replace them with
+                    photographs of your own completed outfits to showcase
+                    Oga Cisco's actual work.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div
+            class="lightbox"
+            id="lightbox"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Gallery image viewer"
+            aria-hidden="true"
+        >
+            <button
+                type="button"
+                class="lightbox-close"
+                id="lightboxClose"
+                aria-label="Close image viewer"
+            >
+                &times;
+            </button>
+
+            <button
+                type="button"
+                class="lightbox-prev"
+                id="lightboxPrev"
+                aria-label="Previous image"
+            >
+                &#10094;
+            </button>
+
+            <figure class="lightbox-content">
+                <img src="" alt="" id="lightboxImage">
+
+                <figcaption id="lightboxCaption"></figcaption>
+            </figure>
+
+            <button
+                type="button"
+                class="lightbox-next"
+                id="lightboxNext"
+                aria-label="Next image"
+            >
+                &#10095;
+            </button>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container text-center">
+
+                <p class="eyebrow">FOUND A STYLE YOU LOVE?</p>
+
+                <h2>Let's Make It Yours.</h2>
+
+                <p>
+                    Share your inspiration with us and discuss a design
+                    tailored to your measurements and preferences.
+                </p>
+
+                <a href="contact.html#booking" class="btn btn-gold">
+                    Discuss Your Design
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a class="brand" href="index.html">
+                    <span class="brand-symbol" aria-hidden="true">✂</span>
+
+                    <span class="brand-text">
+                        OGA CISCO
+                        <small>TAILORING &amp; FASHION</small>
+                    </span>
+                </a>
+
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="ready-made.html">Ready-Made</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    &copy; <span id="year"></span> Oga Cisco Tailoring &amp;
+                    Fashion. All rights reserved.
+                </span>
+
+                <a href="contact.html">Get in Touch</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Website JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>

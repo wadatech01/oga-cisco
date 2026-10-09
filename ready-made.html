@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore ready-made clothing from Oga Cisco Tailoring & Fashion, including smart casual wear, formal styles, and fashion essentials."
+    >
+
+    <meta name="theme-color" content="#111111">
+
+    <title>Ready-Made Collection | Oga Cisco Tailoring &amp; Fashion</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Website Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="topbar">
+        <div class="container topbar-content">
+            <span>Premium tailoring. Made with precision.</span>
+            <span>Luxury | Style | Confidence</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand brand" href="index.html">
+                <span class="brand-symbol" aria-hidden="true">✂</span>
+
+                <span class="brand-text">
+                    OGA CISCO
+                    <small>TAILORING &amp; FASHION</small>
+                </span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="ready-made.html"
+                        >
+                            Ready-Made
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <a href="contact.html#booking" class="btn btn-gold nav-booking">
+                    Make an Inquiry
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Page Hero -->
+        <header class="page-hero">
+            <div class="container">
+
+                <p class="eyebrow">THE READY-MADE COLLECTION</p>
+
+                <h1>Find Your Next Favorite Look</h1>
+
+                <p>
+                    Explore versatile fashion pieces for work, casual
+                    outings, celebrations, and special occasions.
+                </p>
+
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li
+                            class="breadcrumb-item active"
+                            aria-current="page"
+                        >
+                            Ready-Made
+                        </li>
+                    </ol>
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- Collection -->
+        <section class="section section-light">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">SHOP THE LOOK</p>
+
+                    <h2>Our Fashion Collection</h2>
+
+                    <p>
+                        Browse the collection and contact us to confirm
+                        availability, sizing, and current prices.
+                    </p>
+                </div>
+
+                <!-- Product Filters -->
+                <div
+                    class="gallery-filters product-filters"
+                    role="group"
+                    aria-label="Filter products by category"
+                >
+                    <button
+                        type="button"
+                        class="gallery-filter active"
+                        data-product-filter="all"
+                        aria-pressed="true"
+                    >
+                        All Items
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-product-filter="formal"
+                        aria-pressed="false"
+                    >
+                        Formal Wear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-product-filter="casual"
+                        aria-pressed="false"
+                    >
+                        Casual Wear
+                    </button>
+
+                    <button
+                        type="button"
+                        class="gallery-filter"
+                        data-product-filter="traditional"
+                        aria-pressed="false"
+                    >
+                        Traditional Wear
+                    </button>
+                </div>
+
+                <!-- Product Grid -->
+                <div class="row g-4 product-grid" id="productGrid">
+
+                    <!-- Product 1 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="formal"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about the classic formal outfit"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&q=85"
+                                    alt="Classic formal menswear"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">FORMAL</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Formal Collection</p>
+
+                                <h2>Classic Formal Outfit</h2>
+
+                                <p class="product-description">
+                                    A refined look for professional settings
+                                    and important occasions.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="casual"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about the smart casual shirt"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=85"
+                                    alt="Smart casual shirt"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">CASUAL</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Casual Collection</p>
+
+                                <h2>Smart Casual Shirt</h2>
+
+                                <p class="product-description">
+                                    An easy-to-style piece for relaxed
+                                    outings and everyday wear.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="traditional"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about traditional-inspired attire"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1614251055880-ee96e4803393?auto=format&fit=crop&w=800&q=85"
+                                    alt="Traditional-inspired formal attire"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">TRADITIONAL</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Traditional Collection</p>
+
+                                <h2>Traditional Occasion Wear</h2>
+
+                                <p class="product-description">
+                                    A distinctive style inspiration for
+                                    ceremonies and celebrations.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="formal"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about the modern formal style"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&w=800&q=85"
+                                    alt="Modern formal clothing"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">FORMAL</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Formal Collection</p>
+
+                                <h2>Modern Formal Style</h2>
+
+                                <p class="product-description">
+                                    A versatile look for meetings, dinners,
+                                    and smart social events.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="casual"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about the contemporary casual look"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=85"
+                                    alt="Contemporary casual fashion"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">CASUAL</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Casual Collection</p>
+
+                                <h2>Contemporary Casual Look</h2>
+
+                                <p class="product-description">
+                                    Contemporary fashion inspiration for
+                                    a relaxed but polished appearance.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div
+                        class="col-12 col-sm-6 col-lg-4"
+                        data-product-category="traditional"
+                    >
+                        <article class="product-card h-100">
+
+                            <a
+                                href="contact.html#booking"
+                                class="product-image"
+                                aria-label="Inquire about the elegant occasion outfit"
+                            >
+                                <img
+                                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=85"
+                                    alt="Elegant occasion fashion"
+                                    loading="lazy"
+                                >
+
+                                <span class="product-tag">OCCASION</span>
+                            </a>
+
+                            <div class="product-info">
+                                <p class="product-category">Occasion Collection</p>
+
+                                <h2>Elegant Occasion Outfit</h2>
+
+                                <p class="product-description">
+                                    A polished fashion inspiration for
+                                    celebrations and memorable events.
+                                </p>
+
+                                <div class="product-footer">
+                                    <span class="product-price">
+                                        Price on Request
+                                    </span>
+
+                                    <a
+                                        href="contact.html#booking"
+                                        class="product-link"
+                                    >
+                                        Inquire &rarr;
+                                    </a>
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+
+                <p class="gallery-note">
+                    Product images are illustrative. Confirm actual
+                    stock, colors, sizes, and prices before placing an order.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Ordering Information -->
+        <section class="section process-section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow eyebrow-dark">HOW TO ORDER</p>
+
+                    <h2>Simple and Straightforward</h2>
+
+                    <p>
+                        Contact us about an item and confirm the details
+                        before arranging your purchase.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-4">
+                        <article class="process-card h-100">
+                            <span class="process-number">01</span>
+
+                            <h3>Choose an Item</h3>
+
+                            <p>
+                                Browse the collection and decide which
+                                style you would like to ask about.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="process-card h-100">
+                            <span class="process-number">02</span>
+
+                            <h3>Confirm Details</h3>
+
+                            <p>
+                                Ask about availability, sizes, colors,
+                                pricing, and any other requirements.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <article class="process-card h-100">
+                            <span class="process-number">03</span>
+
+                            <h3>Arrange Your Order</h3>
+
+                            <p>
+                                Agree on the order details and collection
+                                or delivery arrangements with us.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container text-center">
+
+                <p class="eyebrow">NEED A DIFFERENT SIZE OR STYLE?</p>
+
+                <h2>Let's Find the Right Fit.</h2>
+
+                <p>
+                    Contact us to ask about our ready-made collection
+                    or discuss a custom-made alternative.
+                </p>
+
+                <a href="contact.html#booking" class="btn btn-gold">
+                    Make an Inquiry
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+
+                <a class="brand" href="index.html">
+                    <span class="brand-symbol" aria-hidden="true">✂</span>
+
+                    <span class="brand-text">
+                        OGA CISCO
+                        <small>TAILORING &amp; FASHION</small>
+                    </span>
+                </a>
+
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="ready-made.html">Ready-Made</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    &copy; <span id="year"></span> Oga Cisco Tailoring &amp;
+                    Fashion. All rights reserved.
+                </span>
+
+                <a href="contact.html">Get in Touch</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Website JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
